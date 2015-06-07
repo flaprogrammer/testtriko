@@ -1,0 +1,340 @@
+.goods {
+	width: 775px;
+	box-sizing: border-box;
+}
+.goods * {
+	box-sizing: inherit;
+}
+
+.good {
+	float: left;
+	width: 150px;
+	height: 250px;
+	font: normal 11px Tahoma,sans-serif;
+	border: 1px solid #e2e2e2;
+	padding: 0px 9px;
+	margin: 2.5px 2px;
+	
+}
+
+
+
+.good__photo_container {
+	text-align: center;
+}
+
+.good__photo {
+	margin-left: -9px;
+	display: none;
+}
+
+.good__photo__active {
+	display: block;
+}
+
+.good__photo_nav {
+	text-align: center;	
+}
+
+.good__photo_nav_el {
+	display: inline-block;
+	border-radius: 50%;
+	background: #a5a5a5;
+	width: 7px;
+	height: 7px;
+	cursor: pointer;
+}
+
+.good__photo_nav_el__active {
+	width: 10px;
+	height: 10px;	
+}
+.good__info {
+	color: #004f81;
+	margin-bottom: 15px;
+}
+
+.good__pp {
+	color: #f59d4b;
+	font-weight: bold;
+}
+
+.good__footer {
+	text-align: center;
+	height: 26px;
+}
+
+.good__cart {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+
+} 
+.good__like {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+} 
+
+.good__price {
+	display: inline-block;
+	height: 26px;
+	margin-top: 5px;
+	color: #8eba2b;
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+
+.modal-content {
+	width: 350px;
+	padding: 25px;
+	font: normal 12px Tahoma,sans-serif;
+}
+
+.modal-dialog {
+	width: 350px;
+}
+
+.modal__flag {
+	position: absolute;
+	top: -4px;
+}
+
+.modal__flag.flag1 {
+	right: 10px;
+}
+.modal__flag.flag2 {
+	right: 42px;
+}
+
+.modal__gallery {
+	position: relative;
+	width: 295px;
+	height: 355px;
+	border: 1px solid #e2e2e2;
+	margin: auto;
+	text-align: center;
+}
+
+.modal__gallery:before {
+	content: '';
+	display: block;
+	position: absolute;
+	background: #000000;
+	width: 295px;
+	height: 1px;
+	left: -1px;
+	top: -2px;
+}
+
+.modal__photo {
+
+}
+
+.modal__gallery_navel {
+	display: inline-block;
+	position: relative;
+	width: 55px;
+	height: 55px;
+	border: 1px solid #b0b2b5;
+}
+
+.modal__gallery_navel img {
+	width: 100%;
+	height: 100%;
+}
+
+.modal__info {
+	width: 267px;
+	margin: auto;
+	background: #f1f1f1;
+	color: #004f81;
+}
+
+.modal__infos {
+	padding: 15px 10px;
+}
+
+.modal__pp {
+	color: #f59d4b;
+	font-weight: bold;
+}
+
+.modal__table_nav {
+	position: relative;
+	width: 294px;
+	height: 30px;
+	border: 1px solid #cccccc;
+	margin-left: -14px;
+	background: #ffffff;
+	font-size: 15px;
+	padding-top: 5px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.modal__table_nav::before, .modal__table_nav::after {
+	content: ''; 
+	position: absolute;
+	left: 60px; bottom: -20px;
+	border: 10px solid transparent;
+	border-top: 10px solid #cccccc;
+}
+
+.modal__table_nav::after {
+	border-top: 10px solid white;
+	bottom: -19px; 
+}
+
+.modal__price_info {
+	color: #808284;
+	padding: 0px 4px;
+}
+
+.modal__table_but {
+	margin: 0px 40px;
+}
+.modal__table_but.active {
+	color:#8cbc1a;
+}
+
+.modal__price {
+	float: left;
+}
+.modal__price_val {
+	color: #8cbc1a;
+	font-size: 15px;
+	font-weight: bold;
+}
+.modal__price_val:after {
+	content: ' ₽';
+}
+
+.modal__tofav {
+	float: right;
+	margin-top: -5px;
+	font-size: 10px;
+}
+
+
+
+.modal__table_info {
+	display: table;
+	color: #808284;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.modal__table_info .tr {
+	display: table-row;
+	border-bottom: 1px solid #ffffff;
+}
+
+.modal__table_info .th {
+	display: table-row;
+	border-bottom: 1px solid #ffffff;
+}
+.modal__table_info .td {
+	display: table-cell;
+	text-align: center;
+	padding: 5px 5px;
+	vertical-align: middle;
+	
+}
+
+.modal__table_info .tr + .tr .td {
+	border-top: 1px solid #ffffff;
+}
+
+.modal__table_info .th .td {
+	color: #ffffff;
+	background: #b3b3b3;
+	padding: 5px;
+	border-left: 2px solid #f1f1f1;
+	border-right: 2px solid #f1f1f1;
+}
+
+.modal__table_info .th .color {
+	text-align: center;
+}
+
+.modal__table_info .tr .td.color {
+	width: 66px;
+	text-align: left;
+
+}
+
+.modal__table_info .tr:after {
+	content: '';
+	width: 100%;
+	background: #ffffff;
+	height: 1px;
+
+}
+
+.modal__table_info .tr .td.num {
+	width: 58px;
+}
+.modal__table_info .tr .td.boxes {
+	width: 65px;
+}
+
+.modal__table_info .td.boxes input {
+	width: 21px;
+	text-align: center;
+}
+
+.modal__minus_but {
+	width: 13px;
+	height: 13px;
+	background: url('../i/minus_but.png');
+	border: none;
+	border-radius: 50%;
+}
+.modal__plus_but {
+	width: 13px;
+	height: 13px;
+	background: url('../i/plus_but.png');
+	border: none;
+	border-radius: 50%;
+}
+
+.modal__table_info .tr .td.inorder {
+	width: 79px;
+	color: #7bb933;
+}
+
+.modal__cart_icon {
+	margin-top: -3px;
+}
+
+.modal__myorder {
+	position: relative;
+	width: 294px;
+	height: 30px;
+	border: 1px solid #cccccc;
+	margin-left: -14px;
+	background: #ffffff;
+	text-align: right;
+	padding-top: 6px;
+	padding-right: 30px;
+}
+
+.modal__myorder_val:after {
+	content: ' ₽';
+}
+
+.modal__recom {
+	border: 1px solid #cccccc;
+	border-top: none;
+	background: #ffffff;
+	text-align: center;
+	color: #808284;
+}
+
+.modal__recom_title {
+	text-align: left;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}

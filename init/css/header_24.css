@@ -1,0 +1,482 @@
+#headerWrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 99;
+	border-bottom: 5px solid #78bb27;
+	width: 100%;
+	height: 110px;
+}
+#header
+{
+	width: 989px;
+	padding: 16px 0 3px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+	#logo
+	{
+		float: left;
+		/*margin-top: -9px;*/
+		margin-top: -8px;
+		width: 216px;
+		text-align: center;
+	}
+	
+		#logo img
+		{
+			/*width: 172px;
+			height: 90px;*/
+		}
+	
+	#headerInfoWrapper
+	{
+		margin-left: 218px;
+	}
+	
+	#headerInfo
+	{
+		height: 82px;
+	}
+		
+		#header .column
+		{
+			overflow: hidden;
+			height: 100%;
+			position: relative;
+			float: left;
+		}
+		
+		#header .column.separator
+		{
+			float: right;
+			width: 2%;
+		}
+		
+		#headerColumn1
+		{
+			width: 440px;
+			white-space: nowrap;
+		}
+		
+			#slogan
+			{
+				float: left;					
+				line-height: 150%;
+				font-size: 9pt;
+			}
+			
+				#slogan b
+				{
+					text-transform: uppercase;
+					color: #78bb27;
+					font-weight: normal;
+				}
+
+			#phone
+			{
+				border-left: solid 1px #d3d3d3;
+				padding-left: 5px;
+				float: right;
+				height: 40px;
+				margin-bottom: 16px;
+				line-height: 150%;
+				text-align: center;
+			}
+			
+				#phone .number
+				{
+					color: #78bb27;
+					font-size: 12pt;
+				}
+				
+					#phone .number a
+					{
+						color: #8cbc1a;
+					}
+		
+			#search
+			{
+				padding-right: 27px;
+				position: relative;
+			}
+				
+				#query
+				{
+					background-color: #f7f7f4;
+					border: solid 1px #d6d6d6;
+					border-radius: 7px 0 0 7px;
+					-webkit-border-top-left-radius: 7px;
+					-webkit-border-bottom-left-radius: 7px;
+					padding-right: 13px;
+					position: relative;
+					height: 24px;
+					behavior: url('/templates/triko/css/PIE.htc');
+				}
+				
+				#search form input[type="text"]
+				{
+					background: none;
+					border: 0;
+					padding: 1px 7px;
+					margin-top: 3px;
+					width: 100%
+				}
+				
+				#search .submit
+				{
+					position: absolute;
+					right: 0;
+					top: 0;
+					background-color: #f7f7f4;
+					border: solid 1px #d6d6d6;
+					border-radius: 0 7px 7px 0;
+					-webkit-border-top-right-radius: 7px;
+					-webkit-border-bottom-right-radius: 7px;
+					width: 26px;
+					height: 24px;
+					behavior: url('/templates/triko/css/PIE.htc');
+				}
+				
+				#search form input[type="submit"]
+				{
+					position: absolute;
+					left: 0;
+					top: 0;
+					margin: 2px;
+					padding: 0;
+					width: 21px;
+					height: 22px;
+					background-image: url('../img/search_glass.png');
+					background-repeat: no-repeat;
+					background-position: center;
+					background-color: transparent;
+					border: 0;
+				}
+				
+				#search form input
+				{
+					vertical-align: top;
+					/*line-height: 21px;*/
+				}
+		
+		#headerColumn2
+		{
+		}
+		
+			#cart
+			{
+				position: relative;
+				margin: 0 13px;
+				background-color: #f4f4f4;
+				height: 100%;
+				width: 130px;
+				border-radius: 7px;
+				-webkit-border-top-left-radius: 7px;
+				-webkit-border-top-right-radius: 7px;
+				-webkit-border-bottom-right-radius: 7px;
+				-webkit-border-bottom-left-radius: 7px;
+				color: #2b578f;
+				behavior: url('/templates/triko/css/PIE.htc');
+			}
+			
+				#cart a.wide
+				{
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					background: url('../img/transparent.png');
+					top: 0;
+					left: 0;
+					z-index: 10;
+				}
+			
+				#cart .info, #cart .info_act
+				{
+					position: relative;
+					border-bottom: solid 1px #ffffff;
+					height: 41px;
+					/*padding: 12px 0 0 50px;*/
+					padding: 12px 0 0 50px;
+					border-radius: 7px 7px 0 0;
+					-webkit-border-top-left-radius: 7px;
+					-webkit-border-top-right-radius: 7px;
+					behavior: url('/templates/triko/css/PIE.htc');
+				}
+				
+					#cart .summary,
+					#cart .summary a
+					{
+						color: #78bb27;
+					}
+					
+					#cartImg
+					{
+						position: absolute;
+						top: 20px;
+						left: 7px;
+						width: 33px;
+						height: 23px;
+						background-image: url('../img/cartnew.png');
+						background-repeat: no-repeat;
+						background-position: left top;
+					}
+					
+					#cart .info:hover, #cart .info_act
+					{
+						background-image: url('../img/cart_back.png');
+						background-repeat: repeat-x;
+						background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#adcf87), to(#87bf57));
+						background: -webkit-linear-gradient(top, #adcf87, #87bf57);
+						background: -moz-linear-gradient(top, #adcf87, #87bf57);
+						background: -ms-linear-gradient(top, #adcf87, #87bf57);
+						background: -o-linear-gradient(top, #adcf87, #87bf57);
+						color: #ffffff;
+					}
+					
+						#cart .info:hover #cartImg, #cart .info_act #cartImg
+						{
+							background-position: 0 -23px;
+						}
+						
+						#cart .info:hover .summary, #cart .info_act .summary
+						{
+							color: #ffffff;
+						}
+					
+				#cart .favorites, #cart .favorites_act
+				{
+					text-align: center;
+					padding-top: 6px;
+					height: 21px;
+					position: relative;
+					border-radius: 0 0 7px 7px;
+					-webkit-border-bottom-right-radius: 7px;
+					-webkit-border-bottom-left-radius: 7px;
+					behavior: url('/templates/triko/css/PIE.htc');
+				}
+				
+					#cart .favorites:hover, #cart .favorites_act
+					{
+						background-image: url('../img/menu_active.png');
+						background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#adcf87), to(#87bf57));
+						background: -webkit-linear-gradient(top, #adcf87, #87bf57);
+						background: -moz-linear-gradient(top, #adcf87, #87bf57);
+						background: -ms-linear-gradient(top, #adcf87, #87bf57);
+						background: -o-linear-gradient(top, #adcf87, #87bf57);
+						color: #ffffff;
+					}
+					
+		
+		#headerColumn3
+		{
+		}
+		
+			#auth
+			{
+				width: 175px;
+				height: 100%;
+			}
+			
+				#auth .lineWrapper
+				{
+					position: relative;
+					padding-right: 27px;
+					height: 26px;
+					margin-bottom: 5px;
+				}
+
+				#auth .line
+				{
+					background-color: #f7f7f4;
+					padding-right: 23px;
+					position: relative;
+					margin-bottom: 1px;
+					height: 24px;
+					border: solid 1px #d6d6d6;
+					border-radius: 7px;
+					-webkit-border-top-left-radius: 7px;
+					-webkit-border-top-right-radius: 7px;
+					-webkit-border-bottom-right-radius: 7px;
+					-webkit-border-bottom-left-radius: 7px;
+					behavior: url('/templates/triko/css/PIE.htc');
+				}
+				
+					#auth .line.button
+					{
+						border-radius: 7px 0 0 7px;
+						-webkit-border-top-left-radius: 7px;
+						-webkit-border-top-right-radius: 0;
+						-webkit-border-bottom-right-radius: 0;
+						-webkit-border-bottom-left-radius: 7px;
+						behavior: url('/templates/triko/css/PIE.htc');
+					}
+				
+					#auth input[type="text"],
+					#auth input[type="password"]
+					{
+						background: none;
+						border: 0;
+						padding: 1px 7px;
+						margin-top: 3px;
+						width: 100%
+					}
+					
+					#auth .submit
+					{
+						position: absolute;
+						right: 0;
+						top: 0;
+						background-color: #f7f7f4;
+						border: solid 1px #d6d6d6;
+						border-radius: 0 7px 7px 0;
+						-webkit-border-top-right-radius: 7px;
+						-webkit-border-bottom-right-radius: 7px;
+						width: 40px;
+						height: 24px;
+						behavior: url('/templates/triko/css/PIE.htc');
+					}
+					
+					#auth .submit:hover
+					{
+						background-color: #99c561;
+						color: #ffffff;
+						cursor: pointer;
+					}					
+					
+						#auth .submit a {
+							font-size:11px;
+							padding-left: 5px;
+							
+						}
+						
+						#auth .submit:hover a {
+							font-size:11px;
+							padding-left: 5px;
+							color: #ffffff;
+							text-decoration:none;
+						}
+
+						#auth .submit:hover a:hover {
+							font-size:11px;
+							padding-left: 5px;
+							color: #ffffff;
+							text-decoration:none;
+						}						
+						
+						#auth .submit div { 
+							margin-top: 3px;
+						}
+					
+					#auth form input[type="image"]
+					{
+						position: absolute;
+						left: 0;
+						top: 0;
+						padding: 7px 5px;
+						width: 29px;
+						height: 11px;
+					}
+					
+					#auth form input
+					{
+						vertical-align: top;
+					}
+					
+				#auth .links
+				{
+					font-size: 11px;
+					text-align: center;
+					padding-top: 3px;
+				}
+				
+					#auth .links span
+					{
+						padding: 0 3px;
+					}
+					
+					#auth .links a:hover
+					{
+						text-decoration: underline;
+					}
+					
+		#user
+		{
+			width: 175px;
+			position: relative;
+			background-color: #f4f4f4;
+			height: 100%;
+			border-radius: 7px;
+			-webkit-border-top-left-radius: 7px;
+			-webkit-border-top-right-radius: 7px;
+			-webkit-border-bottom-right-radius: 7px;
+			-webkit-border-bottom-left-radius: 7px;
+			behavior: url('/templates/triko/css/PIE.htc');
+		}
+		
+			#user a
+			{
+				display: block;
+				border-top: solid 1px #ffffff;
+				height: 27px;
+				line-height: 27px;
+				text-align: center;
+			}
+			
+			#user a:hover, #user a.act
+			{
+				background-image: url('../img/menu_active.png');
+				background-color: #99c561;
+				color: #ffffff;
+				text-decoration: none;
+			}			
+			
+				#user a:first-child
+				{
+					border-top: 0;
+					border-radius: 7px 7px 0 0;
+					-webkit-border-top-left-radius: 7px;
+					-webkit-border-top-right-radius: 7px;
+					behavior: url('/templates/triko/css/PIE.htc');					
+				}
+				
+				#user a:last-child
+				{
+					border-radius: 0 0 7px 7px ;
+					-webkit-border-bottom-right-radius: 7px;
+					-webkit-border-bottom-left-radius: 7px;
+					behavior: url('/templates/triko/css/PIE.htc');					
+				}
+
+#jivo-label-wrapper{
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#adcf87), to(#87bf57))!important;
+	background: -webkit-linear-gradient(top, #adcf87, #87bf57)!important;
+	background: -moz-linear-gradient(top, #adcf87, #87bf57)!important;
+	background: -ms-linear-gradient(top, #adcf87, #87bf57)!important;
+	background: -o-linear-gradient(top, #adcf87, #87bf57)!important;
+}	
+
+#headerPointer {
+	position: absolute;
+	top:98px;
+	left:0;
+	width:100%;
+}
+
+#headerPointer .pointer{
+	cursor: pointer;
+	background-image: url(http://triko.ru/templates/triko/img/pc.png);
+	/*display:none;*/
+	width: 41px;
+	height: 19px;
+	top: 10px;
+	margin-top: 17px;
+	margin-left: 945px;	
+}
+
+#headerPointer .pointer.open{background-image: url(http://triko.ru/templates/triko/img/po.png);}
+
+#headerPointer #wrap{width:980px;margin:0 auto;}

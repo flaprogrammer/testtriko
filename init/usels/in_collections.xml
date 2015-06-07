@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selection>
+	<target result="pages">
+		<type id="124" />
+	</target>
+	
+	<property name="collection_items">
+		<page>{1}</page>
+	</property>
+	<property name="mashuk" value="{mashuk}" />
+	<property name="bossa_nova" value="{bossa_nova}" />
+</selection>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selection>
+	<target result="pages">
+		<type id="118" /> 
+		<type id="77" />
+		<type module="catalog" method="category" />
+		<category depth="3">/categories/</category>
+	</target>
+	<property name="material" value="{material}" />
+	<property name="new" value="{new}" />
+	<property name="hit" value="{hit}" />
+	<!--<property name="mashuk" value="{mashuk}" />
+	<property name="bossa_nova" value="{bossa_nova}" />-->
+	<property name="brands">		
+    <object>{1}</object>
+    <object>{2}</object>
+    <object>{3}</object>
+    <!--object>{4}</object>
+    <object>{5}</object>
+    <object>{6}</object>
+    <object>{7}</object>
+    <object>{8}</object>
+    <object>{9}</object>
+    <object>{10}</object-->
+	</property>
+	<property name="subpages">
+		<object>{size}</object>
+	</property>
+	
+	<sort order="{order}">{sort}</sort>
+	<sort order="{order2}">{sort2}</sort>
+</selection>
