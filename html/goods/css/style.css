@@ -1,3 +1,7 @@
+button {
+	cursor: pointer;
+}
+
 .goods {
 	width: 775px;
 	box-sizing: border-box;
@@ -247,6 +251,10 @@
 	border-bottom: 1px solid #ffffff;
 }
 
+.modal__table_info .tr__nonzero .modal__table_refresh{
+	visibility: visible;
+}
+
 .modal__table_info .th {
 	display: table-row;
 	border-bottom: 1px solid #ffffff;
@@ -322,8 +330,10 @@
 	text-align: right;
 }
 
-.modal__table_info .refresh {
+.modal__table_refresh {
 	cursor: pointer;
+	float: left;
+	visibility: hidden;
 }
 
 .modal__cart_icon {
