@@ -337,7 +337,18 @@ button {
 }
 
 .modal__cart_icon {
-	margin-top: -3px;
+	margin-top: -2px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.modal__tofav a{
+	text-decoration: none;
+}
+
+.modal__tofav img {
+	vertical-align: middle;
+	margin-right: 5px;
 }
 
 .modal__myorder {
@@ -349,7 +360,7 @@ button {
 	background: #ffffff;
 	text-align: right;
 	padding-top: 6px;
-	padding-right: 30px;
+	padding-right: 19px;
 }
 
 .modal__myorder_val:after {
