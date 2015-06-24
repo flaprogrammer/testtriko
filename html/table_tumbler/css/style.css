@@ -1,0 +1,65 @@
+.table_tumbler {
+	font: normal 12px "Myriad Pro",sans-serif;
+	clear: both;
+	color: #939598;
+}
+
+.table_tumbler input {
+	margin: 0;
+	vertical-align: top;
+}
+
+.table_tumbler__left {
+	float: left;
+}
+
+
+.table_tumbler__right {
+	float: right;
+}
+
+.table_tumbler__grid_but {
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.table_tumbler__table_but {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.table_tumbler__grid_img {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.table_tumbler__table_img {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.table_tumbler__grid_img {
+	display: inline-block;
+	width: 19px;
+	height: 18px;
+	background-image: url('../i/grid_but_grey.png');
+}
+
+.table_tumbler__table_img {
+	display: inline-block;
+	width: 19px;
+	height: 18px;
+	background-image: url('../i/table_but_grey.png');
+}
+
+.table_tumbler__but--active {
+	color:#8cbc1a;
+}
+
+.table_tumbler__but--active .table_tumbler__grid_img {
+	background-image: url('../i/grid_but.png');
+}
+.table_tumbler__but--active .table_tumbler__table_img {
+	background-image: url('../i/table_but.png');
+}
+
