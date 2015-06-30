@@ -43,18 +43,46 @@ function Modal() {
 	var self = this;
 	self.el = $('#goodsModal')[0];
 	$(self.el).modal();
+	
 
-	$(self.el).find('.modal__plus_but').on('click', function() {
-		var val = $(this).closest('.boxes').find('.modal__boxes_num').val();
+}
+
+function BCard(card) {
+	var self = {};
+	self.el = card;
+	
+	$(self.el).find('.b_card__plus_but').on('click', function() {
+		console.log('plus');
+		var val = $(this).closest('.boxes').find('.b_card__boxes_num').val();
 		val ++;
-		$(this).closest('.boxes').find('.modal__boxes_num').val(val);
+		$(this).closest('.boxes').find('.b_card__boxes_num').val(val);
+		checkVal($(this).closest('.boxes').find('.b_card__boxes_num'));
 	});
 
-	$(self.el).find('.modal__minus_but').on('click', function() {
-		var val = $(this).closest('.boxes').find('.modal__boxes_num').val();
+	$(self.el).find('.b_card__minus_but').on('click', function() {
+		var val = $(this).closest('.boxes').find('.b_card__boxes_num').val();
 		val = (val>0) ? val-1 : 0;
-		$(this).closest('.boxes').find('.modal__boxes_num').val(val);
+		$(this).closest('.boxes').find('.b_card__boxes_num').val(val);
+		checkVal($(this).closest('.boxes').find('.b_card__boxes_num'));
+	});
+
+	function checkVal(el) {
+		if(el.val()>0) {
+			el.closest('.tr').addClass('tr__nonzero');
+		}
+		else {
+			el.closest('.tr').removeClass('tr__nonzero');
+		}
+	}
+
+	$(self.el).find('.b_card__table_refresh').on('click', function() {
+		var input = $(this).closest('.tr').find('.b_card__boxes_num');
+		var val = input.val();
+		$(this).closest('.tr').find('.b_card__table_inorder_val').html(val);
+		input.val('0');
+		checkVal(input);
 	});
 }
 
 var modal = new Modal();
+var bcard = new BCard($('.b_card'));
